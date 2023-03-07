@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<form> 
+
+Enter 1st No:  <input type="text" id ="num1"> <br>
+Enter 2nd No: <input type="text" id = "num2"> <br>
+<input type="button" id = "b1" onclick = "add()" value = "+" >
+<input type="button" id = "b1" onclick = "sub()" value = "-" >
+<input type="button" id = "b1" onclick = "mul()" value = "*" >
+<input type="button" id = "b1" onclick = "div()" value = "/" > <br>
+Result <input type="text" id = "res"> <br>
+
+</form>
+<script> 
+function add()
+{
+a = parseInt(document.getElementById("num1").value) ;
+b = parseInt(document.getElementById("num2").value );
+c = a+b;
+document.getElementById("res").value = c;
+}
+function sub()
+{
+a = document.getElementById("num1").value ;
+b = document.getElementById("num2").value ;
+c = a-b;
+document.getElementById("res").value = c;
+}
+function mul()
+{
+a = document.getElementById("num1").value ;
+b = document.getElementById("num2").value ;
+c = a*b;
+document.getElementById("res").value = c;
+}
+function div()
+{
+a = document.getElementById("num1").value ;
+b = document.getElementById("num2").value ;
+c = a/b;
+document.getElementById("res").value = c;
+}
+</script>
